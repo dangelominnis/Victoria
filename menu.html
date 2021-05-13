@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victoria's Taste Of Peru</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Google Material Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="header-box">
+                <h4>Newly Opened</h4>
+                <h1>Come Visit Our Restaurant</h1>
+                <p>We love to welcome you to our new family restaurant! We love to welcome you to our new family restaurant! We love to welcome you to our new family restaurant!</p>
+                <div class="header-button-box">
+                    <a href="#About" class="btn-primary">Take A Look</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Bar -->
+    <div class="bar">
+        <div class="bar__content u-centered">
+            <img class="bar__logo" src="img/victorias-logo-01.png" alt="logo image">
+            <input type="checkbox" id="inpNavToggle">
+            <label class="bar__nav-toggle" for="inpNavToggle">
+                <i class="material-icons">list</i>
+            </label>
+            <nav class="nav">
+                <a class="nav__link" href="index.html">Home</a>
+                <a class="nav__link" href="menu.html">Menu</a>
+                <a href="#" class="btn-primary">Order Now</a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Header Javascript -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const observer = new IntersectionObserver(entries => {
+                document.querySelector(".bar").classList.toggle("bar--bg", entries[0].intersectionRatio < 0.9)
+            }, {
+                threshold: 0.9
+            });
+            
+            observer.observe(document.querySelector(".header"));
+        });
+        </script>
+
+    <!-- About Us Section -->
+    <section class="about" id="About">
+        <div class="container">
+            <div class="about-container">
+                <div class="about-image-box">
+                    <img src="img/food_image_2.jpeg" alt="">
+                </div>
+                <div class="about-text-box">
+                    <div class="underline"></div>
+                    <h4>About Us</h4>
+                    <h2>Craving A Taste?</h2>
+                    <p>We have moved from New York and wanted to give to our new community, best way we found was our Peruvian food to share with Jacksonville!</p>
+                    <a href="#Menu" class="btn-primary">View Menu</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Menu Section -->
+<section class="menu" id="Menu">
+    <div class="container">
+        <div class="underline"></div>
+        <h4>Menu</h4>
+        <h2>Main Dishes</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi vero numquam dolorum esse.</p>
+        <div class="menu-box">
+            <div class="menu-item">
+                <div class="menu-imgbox">
+                    <img src="img/food_image_3.jpeg" alt="">
+                </div>
+                <div class="menu-textbox">
+                    <h3>Main Dish #1</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="menu-pricebox">
+                    <h4>$6.99</h4>
+                    <a href="#">$$</a>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-imgbox">
+                    <img src="img/food_image_2.jpeg" alt="">
+                </div>
+                <div class="menu-textbox">
+                    <h3>Main Dish #1</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="menu-pricebox">
+                    <h4>$6.99</h4>
+                    <a href="#">$$</a>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-imgbox">
+                    <img src="img/food_image_3.jpeg" alt="">
+                </div>
+                <div class="menu-textbox">
+                    <h3>Main Dish #1</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="menu-pricebox">
+                    <h4>$6.99</h4>
+                    <a href="#">$$</a>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-imgbox">
+                    <img src="img/food_image_2.jpeg" alt="">
+                </div>
+                <div class="menu-textbox">
+                    <h3>Main Dish #1</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="menu-pricebox">
+                    <h4>$6.99</h4>
+                    <a href="#">$$</a>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-imgbox">
+                    <img src="img/food_image_3.jpeg" alt="">
+                </div>
+                <div class="menu-textbox">
+                    <h3>Main Dish #1</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="menu-pricebox">
+                    <h4>$6.99</h4>
+                    <a href="#">$$</a>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-imgbox">
+                    <img src="img/food_image_2.jpeg" alt="">
+                </div>
+                <div class="menu-textbox">
+                    <h3>Main Dish #1</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="menu-pricebox">
+                    <h4>$6.99</h4>
+                    <a href="#">$$</a>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-imgbox">
+                    <img src="img/food_image_3.jpeg" alt="">
+                </div>
+                <div class="menu-textbox">
+                    <h3>Main Dish #1</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="menu-pricebox">
+                    <h4>$6.99</h4>
+                    <a href="#">$$</a>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-imgbox">
+                    <img src="img/food_image_2.jpeg" alt="">
+                </div>
+                <div class="menu-textbox">
+                    <h3>Main Dish #1</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="menu-pricebox">
+                    <h4>$6.99</h4>
+                    <a href="#">$$</a>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-imgbox">
+                    <img src="img/food_image_3.jpeg" alt="">
+                </div>
+                <div class="menu-textbox">
+                    <h3>Main Dish #1</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="menu-pricebox">
+                    <h4>$6.99</h4>
+                    <a href="#">$$</a>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-imgbox">
+                    <img src="img/food_image_2.jpeg" alt="">
+                </div>
+                <div class="menu-textbox">
+                    <h3>Main Dish #1</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="menu-pricebox">
+                    <h4>$6.99</h4>
+                    <a href="#">$$</a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section class="contact" id="Contact">
+    <div class="container">
+        <div class="contact-container">
+            <div class="contact-text">
+                <h4>Schedule An Appointment With Us!</h4>
+                <h2>Contact Our Team</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi saepe accusamus consequuntur accusantium aliquam repellendus pariatur, tempora voluptatibus facere. Consectetur.</p>
+            </div>
+            <div class="contact-box">
+                <form action="">
+                    <div class="contact-box1">
+                        <div class="contact-box1-item">
+                            <h5>First Name*</h5>
+                            <input type="text" name="First Name" id="" class="input" required>
+                        </div>
+                    </div>
+                    <div class="contact-box2">
+                        <div class="contact-box2-item">
+                            <h5>Phone Number*</h5>
+                            <input type="text" name="First Name" id="" class="input" required>
+                        </div>
+                        <div class="contact-box2-item">
+                            <h5>Email*</h5>
+                            <input type="text" name="First Name" id="" class="input" required>
+                        </div>
+                    </div>
+                    <div class="contact-box3">
+                        <div class="contact-box3-item">
+                            <h5>Message*</h5>
+                            <textarea name="Message" id="" cols="30" rows="10" required></textarea>
+                        </div>
+                    </div>
+                    <div class="contact-box-submit">
+                        <div class="contact-button">
+                            <a href="#" class="btn-primary">Submit</a>
+                        </div>
+                        <!-- <input type="submit" value="" class="btn-primary"> -->
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer Section -->
+<section class="footer" id="Footer">
+    <div class="container">
+        <div class="footer-box">
+            <div class="footer-box-company">
+                <img src="img/food_image_2.jpeg" alt="">
+                <p>Delicious peruvian authentic cuisine located in Jacksonville, Florida.</p>
+                <p>Copyright © 2021 Victoria's Taste Of Peru - All rights reserved.</p>
+            </div>
+            <div class="footer-box-links">
+                <h3>Site Map</h3>
+                <ul>
+                    <a href="index.html"><li>Home</li></a>
+                    <a href="menu.html"><li>Menu</li></a>=
+                </ul>
+            </div>
+            <div class="footer-box-socials">
+                <h3>Social Media</h3>
+                <a href="https://www.instagram.com/victoriastasteofperu/"><li><i class="fab fa-instagram"></i></li></a>
+                <a href="https://www.facebook.com/victoriastasteofperu/"><li><i class="fab fa-facebook-f"></i></li></a>
+                <a href="#"><li><i class="fab fa-twitter"></i></li></a>
+            </div>
+            <div class="footer-box-development">
+                <h3>Contact Info</h3>
+                <a href="tel:904-312-9068"><li>(904) 312 - 9068</li></a>
+                <a href="mailto:victoriatasteofperu@gmail.com"><li>victoriatasteofperu@gmail.com</li></a>
+                <a href="https://logo-genius.com/"><li>Developed By Logo Genius</li></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    </body>
+</head>
